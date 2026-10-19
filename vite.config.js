@@ -1,11 +1,12 @@
+
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
+  base: '/FLOODGUARD-AI/',
   plugins: [react()],
-  base: '/FLOODGUARD-AI/', 
   server: {
-    host: true,
     port: 5173,
-  },
+    open: true
+  }
 })
